@@ -1,3 +1,36 @@
+# Source for pybootchartgui
+
+In view of pybootchartgui being deprecated and replaced with bootchart2, this repository aims to provide source code to help assist old scripts that include pybootchartgui as binary.
+
+I suggest to replace old binary with pythonic command, as explained below.
+
+## Where it has been tested?
+
+This has been tested on ubuntu-20.04 with python 3.8. Application was to be able to run grab-bootchart.sh script to produce android os bootchart from linux machine. 
+
+https://source.android.com/devices/tech/perf/boot-times#bootchart
+
+
+## Requirements and How-to-Use
+
+Install cairo. For ubuntu,
+``` 
+sudo apt install python-cairo
+```
+
+
+Unzip / clone this directory in your system as per your wish. 
+
+Replace binary call of pybootchartgui with 
+```
+python /path/to/pybootchartgui/pybootchartgui.py [arguments from old call]
+```
+
+## Future
+
+I would be happy if someone can create dpkg downloadable for this source for distribution with appropriate dependencies. This also will eliminiate any file modification required on user's end.
+
+
 			    PYBOOTCHARTGUI
 			   ----------------
 
